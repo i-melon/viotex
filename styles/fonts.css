@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: customRg;
+    src: url('../assets/fonts/HalvarBreit-Rg.ttf');
+}
+@font-face {
+    font-family: customLt;
+    src: url('../assets/fonts/HalvarMittel-Lt.ttf');
+}
+@font-face {
+    font-family: customBd;
+    src: url('../assets/fonts/HalvarMittel-Rg.ttf');
+}
+body{font-family: customLt}
+.lgText{font-family: customRg}
+.textBolder{font-family: customBd}
+
+.f18{
+    font-size: 18px;
+    line-height: 24px;
+}
+.f18{
+    font-size: 20px;
+    line-height: 24px;
+}
