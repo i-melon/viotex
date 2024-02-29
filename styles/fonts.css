@@ -14,7 +14,7 @@
     font-family: customBd;
     src: url('../assets/fonts/HalvarMittel-Rg.ttf');
 }
-body{font-family: customLt}
+body{font-family: customLt;}
 .lgText{font-family: customRg}
 .textBolder{font-family: customBd}
 
@@ -22,7 +22,7 @@ body{font-family: customLt}
     font-size: 18px;
     line-height: 24px;
 }
-.f18{
-    font-size: 20px;
-    line-height: 24px;
+.f64{
+    font-size: 64px;
+    line-height: normal;
 }

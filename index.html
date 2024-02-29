@@ -9,6 +9,165 @@
         @import "output.css";
     </style>
 </head>
-<body class="flex bg-bgcolor">
+<body class="flex flex-col bg-bgcolor py-5 gap-8">
+    <header class="flex items-center justify-between mx-20 ">
+        <img src="./imgs/viotex.png" alt="">
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 text-white">
+                <a href="">О нас</a>
+                <a href="">Услуги</a>
+                <a href="">Безопасность труда</a>
+                <a href="">Контакты</a>
+                </div>
+            <div class="flex text-[#193441] bg-[#D1DBBD] px-4 rounded-xl h-14 lgText">
+                <button>Обратный звонок</button>
+            </div>
+        </div>
+    </header>
+    <div class="flex justify-between mx-20 ">
+        <div class="flex flex-col gap-8">
+            <h1 class="f64 lgText text-white">Широкий комплекс<br><span class="text-[#D6A255]">общестроительных<br> и подрядных</span> работ</h1>
+            <div class="flex gap-2.5 rounded-xl">
+                <button class="text-[#193441] bg-[#D1DBBD] px-4 rounded-xl h-14 lgText">Обратный звонок</button>
+                <button class="px-4 items-center justify-center bg-[#D1DBBD]">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect y="0.655151" width="32" height="32" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1_20" transform="scale(0.0111111)"/>
+                    </pattern>
+                    <image id="image0_1_20" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGzklEQVR4nO2da4wURRDHBwEf8RV5Tffe+cbEoEG9qrk70aOr9oAQNUaNqwZRY3xg4gOVaKJGJTExSEIkqBH9oEb94gdF0YiP+EHjB2NQVHwnKL4AJcKhUTg4bk3NngSR3Z296ZmevZ1/Ul/usd39296e6qrqXs/LlStXrly5cuXKlStXrlwRVSqNVtgbaKBrNNBihfyyRv5MA61TyFsUUn/FeIv8TH4nf6OQH5L/UYFBeY2ozbWU2jpNu8birRr4VQ20TSOX4xn1KaCVGml+e3exzWtltXd3H6KQr1DAb2uk3fHhVjGgAYX0lkIz91hjDvZaRROnmMNkpimkXxKDW91+08ALj4IZR3ojVgBjfeQ7FNDvDgD/x6QPCmiB9MkbSdIdxR4NvNY14P0A/7qAZobX7JI1UQM/ppEHXUOtYYMKadnkybMP8ppRfpc5TiN/kAGQ5UizG+mj9jPMZK+ZJB9HO24ap2zU53dw0WsG6aB4oQLe7h4aD3dm9xeQLvWyLI18faI+MaY2s3frgK/zsigN5gLZHLiHxNZg+wFf4mVJsq4ppB3u4bD1ZUQDz/KyoLau6Sc154OPo87svonAJzqFLL6nuEXuYXDSttqpnz20GSm3gimkZe621dne8ZUT2EGadCkbM0YhfZqBwZdTNeC1qQaiJArnfNDoxhTwbalAHj9t2uFWQp3Afyjge30wpDsYZClSQE9mHjTyZompJw5aA90Zv8PUJ3D38/KjFPL72Z/VtCDx9JMG2hSzo4MK+JxqbRSQz3cNMoJtSDQtJjk+C51cXrORUmm0RlqfAZi1LaDLkwMdJlLjfOR4+6Suol+vHY18l3OQ9caC/EaCJQExI3NAL0Zpy586c1LmYydAAxOgR1sHHdZdxO5c8aao7Sng553DtDie6KCluCVmxwoNJEILyNOcg6xjCnmFXcrGjAldsrgdCww20qwG+jzjoLdYLT8La+FsdCzg6Q2BRn7NNcy6tv/9wPAUFhym7BK1dZr2Zsg9FpCvtgl6sZUZjfRIA0GrN11DjDYmXmQNtAJ6xU7HaL1ss+u1p4EfdQ0wMmigl+yBthgSVXXWaQV0lWt4jYHmNdZAa+DvLc6AlXXaWugaXkMG/J010LYrQFWNTMW4ztlHKOAfnQOMPBbebA+0pN1tf9xK1f1Pie65BtjApNlhDbQG3mW/k3R3zTaRl7ceaOQ/rXcSeJcPxc6qjQKM1UDvttTSoYE3JtTRLyWZUCuKp4G+cA0zxYchr0mwo0/Xalvi11mGbde9SzjmoIDm1Wq/vXvWOA28KvqbRy9oMBNUYGZrpHeaZ8MC9HDCM2Nn/WLC+w/QSA9ESD6s3nc58oG6hna3g5neglsLKmHNWbitEJjT6/VFHqBV6/2ANhWw5+iq/4vm1DChYNGLshxUKnak9QRv6+TToh1jNnP3PulVKbE1Z0cZzyTsPUEjP2NnghQ7bDDeMzAbgX9tE3ZFo/wOc54GelbKFBodluQwMxX4t5XK0o1VMVWt/bAlBfRUZh6Ee3VqXmqgsZJlloSwl6DieiQ+0o3WOzXkz6Z/RgXo9URuKJCdZ5zlEGhgYmCUl4RcZT2URA8rabC6SYOo8oHOjTcBeJWXlBSYi12A1nuA88cK+SLxqeOMQ243UMhfxQQ9x0tKU6aUDlTAP7mErSuDXKugeEMh6B3f6BjEtYubMZIrMBK/+8NKxRJas51heAB4jj915qH1Jok8vGwkMRTQ7V7SkgElGM0rD3/w/LdCek+2xHJMWs4+FoLeM2Wp0chLbFWoip9f7021Jjm+6xqsdmY030tN4U4xgWQAZtsU0CdSc5IaZw3mZNeD1q1w/E0D39x6s5mXpgo59bgHZsCAPhSvJVXI0mArrc8Keavf2XO8l7bCc4EtA5n6NRRnei6kgB50DUCnYrRbQbHkuZLk5NxD4GRNopRgrnUHGcyEkXFnEtesPHJ+xU8BzWUjGzJvlWeQ51pxUz8627ba+ZU+/0oB/ZwBIGXLJmfTl6buJ9eqicgAlLJNC+PSQGd5WZJcCDLMwfRLVahCuk9eQyH94B4wbw6jcGkGiKKqwdq3dRr4CfFDpYLf21sAYxXwlQrom/Qh069ydON/fcqKJG2jkP6qOkOAv9VIj0tOMXJ6yZgx8kZIbUSi5wlDn5hXSRYm81fPFwLq3WcAGzTwc1J3pmHGMXFff5ycWwnv+6eVNi4rrHy7Ba+Q1FViJQFJSAHdE1ZjAt3iB3xKoo2VSqOl2HGosHKJ5ATD+mzgjeFXggyt+2HuT74yBHhN+KlAXlR544sd+deD5MqVK1euXLly5cqVK5cXXf8A6stXP+gKwHsAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="flex">
+            <svg width="409" height="302" viewBox="0 0 409 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="293" width="408" height="2" fill="#D9D9D9"/>
+                <circle cx="260" cy="171" r="43" fill="#BDB957"/>
+                <path d="M34 147.5C43.2 136.3 73.1667 165.5 87 181.5L12.5 293.5L1 183.5C8.16667 176.167 24.8 158.7 34 147.5Z" fill="#466041"/>
+                <path d="M154 137C195.6 125.4 236 174.5 251 200.5L266 292.5H1V252C34.6667 218.5 112.4 148.6 154 137Z" fill="#394D35"/>
+                <path d="M244.5 198L266 293H407.5C395.667 271.5 364.3 221.6 333.5 194C302.7 166.4 261.333 185.167 244.5 198Z" fill="#466041"/>
+                <rect x="1" y="50" width="38" height="243" fill="white"/>
+                <path d="M10 50V292" stroke="#193441"/>
+                <path d="M20 50V292" stroke="#193441"/>
+                <path d="M29 50V292" stroke="#193441"/>
+                <path d="M1 62.5H39" stroke="#193441"/>
+                <path d="M1 76H39" stroke="#193441"/>
+                <path d="M1 96H39" stroke="#193441"/>
+                <path d="M1 107H39" stroke="#193441"/>
+                <path d="M1 122H39" stroke="#193441"/>
+                <path d="M1 136H39" stroke="#193441"/>
+                <path d="M1 151H39" stroke="#193441"/>
+                <path d="M1 162H39" stroke="#193441"/>
+                <path d="M1 180H39" stroke="#193441"/>
+                <path d="M1 195H39" stroke="#193441"/>
+                <path d="M1 209H39" stroke="#193441"/>
+                <path d="M1 224H39" stroke="#193441"/>
+                <path d="M1 235H39" stroke="#193441"/>
+                <path d="M1 235H39" stroke="#193441"/>
+                <path d="M1 250H39" stroke="#193441"/>
+                <path d="M1 264H39" stroke="#193441"/>
+                <path d="M1 279H39" stroke="#193441"/>
+                <path d="M1 290H39" stroke="#193441"/>
+                <path d="M40 170V293H85V170L73.4615 174.887V194.437H51.5385V174.887L40 170Z" fill="white"/>
+                <rect x="43" y="198" width="39" height="92" fill="#193441"/>
+                <path d="M55 197V292" stroke="white" stroke-width="3"/>
+                <path d="M70 197V292" stroke="white" stroke-width="3"/>
+                <path d="M41.5 245H82L41.5 291.5" stroke="white" stroke-width="3"/>
+                <path d="M81 244L42.5 198" stroke="white" stroke-width="3"/>
+                <path d="M87.5 91V293H134V123.98H121.781V91H87.5Z" fill="white"/>
+                <path d="M97.6825 281.007V97.3711L124.496 281.007H97.6825Z" fill="#193441"/>
+                <path d="M113 91V64" stroke="#2AD7E2"/>
+                <path d="M115 91V64" stroke="#2AD7E2"/>
+                <path d="M117 91V64" stroke="#2AD7E2"/>
+                <path d="M90 91V64" stroke="#2AD7E2"/>
+                <path d="M92 91L92 67" stroke="#2AD7E2"/>
+                <path d="M94 91L94 67" stroke="#2AD7E2"/>
+                <path d="M96 91L96 70" stroke="#2AD7E2"/>
+                <path d="M98 91L98 70" stroke="#2AD7E2"/>
+                <path d="M103 91L103 73" stroke="#2AD7E2"/>
+                <path d="M155.5 198L137 293H265.5L244.5 198H155.5Z" fill="white"/>
+                <path d="M152.5 211.5L249.5 211" stroke="#193441" stroke-width="3"/>
+                <path d="M142.5 255L257.5 253.985" stroke="#193441" stroke-width="3"/>
+                <rect x="162" y="177" width="76" height="18" fill="white"/>
+                <rect x="168" y="156" width="65" height="18" fill="white"/>
+                <rect x="304" y="284.827" width="96" height="10.173" fill="white"/>
+                <rect x="333.935" y="28.4672" width="34.0645" height="261.446" fill="white"/>
+                <path d="M355.613 1L333.935 28.4671H368L355.613 1Z" fill="white"/>
+            </svg>               
+        </div>
+    </div>
+    <div class="flex flex-col gap-8 mx-20 ">
+        <h2 class="text-white text-5xl lgText">Наши услуги</h2>
+        <div class="flex flex-col gap-2.5">
+            <div class="flex gap-10">
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex1.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Новое строительство</p>
+                </div>
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex2.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Монтаж бетонных и железобетонных конструкции</p>
+                </div>
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex3.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Монтаж металлических конструкции</p>
+                </div>
+            </div>  
+            <div class="flex gap-10">
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex4.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Монтаж элементов конструкции надземной части здании</p>
+                </div>
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex5.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Демонтаж строений</p>
+                </div>
+                <div class="flex flex-col bg-white px-5 pt-2.5 pb-4 gap-2.5 rounded-[32px] w-1/3">
+                    <div class="flex">
+                        <img src="./imgs/viotex6.png" alt="">
+                    </div>
+                        <p class="text-black text-xl lgText">Сварные работы, закреплениегрунта</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="flex pb-10 bg-[#6E8579] px-20 rounded-[32px] gap-16 opacity-0.8 items-end">
+        <div class="flex flex-col gap-16">
+            <h2 class="text-[56px] lgText text-white w-full">Получите <span class="text-[#F3FFA6]">бесплатную консуьтацию</span> за 15 минут</h2>
+            <p class="f18 text-[#E8E8F6]">Мы посчитаем ваш объем и дадим лучшее предложение для вас.</p>
+                <div class="flex gap-4">
+                    <input class="px-5 items-center bg-[#6E8579] h-14 rounded-[32px] border-2 border-solid border-[#D1DBBD]" type="text" placeholder="имя">
+                    <input class="px-5 items-center bg-[#6E8579] h-14 rounded-[32px] border-2 border-solid border-[#D1DBBD]" type="text" placeholder="+7 (    )">
+                    <button class="button-color bg-[#D1DBBD] px-5 w-[240px] rounded-[32px] h-14 text-base items-center">Отправить заявку</button>
+                </div>
+        </div>
+        <img class="items-center" src="./imgs/viotex7.png" alt="">
+    </div>
+    <div class="flex flex-col mx-20">
+        <div class="flex justify-between">
+            <h2 class="text-white text-5xl flex lgText items-center">Наши объекты:</h2>
+            <div class="flex">
+                <div class="rounded-[80px] border-2 border-solid border-[#D1DBBD] w-20 h-20 flex items-center justify-center">
+                    <img src="./imgs/Left Arrow.png" alt="">
+                </div>
+                <div class="rounded-[80px] border-2 border-solid border-[#D1DBBD] bg-[#D1DBBD] w-20 h-20 flex items-center justify-center">
+                    <img src="./imgs/Right Arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
